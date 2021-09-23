@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-    <body>
-        <div>
-            <table>
-                <li> 1 </li>
-                <li>  2</li>
-                <li>  3</li>
-                <li>  4</li>
-                <li>  5</li>
-            </table>
+<!-- Documento creado 24/09/21 para probar las tecnologias que intentaremos usar en el proyecto
+Version 0.1  -->
+
+<head>
+    <!-- Referencia para BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Hacer la pagina un poco mas responsive con la siguiente linea -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Enlace a nuestro archivo de Javascript donde trabajaremos Backend -->
+    <script type="text/javascript" language="javascript" src="Javascript.js"></script>
+
+    <title>Proyecto Xavi ALfonso</title>
+</head>
+
+
+<body>
+    <!--Navbar creado con Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Proyecto ASIX </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button type="button" class="btn -light" onclick="Home()">Home</button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="boton" type="button" class="btn btn-light" onclick="PulsarPrueba()">Probando</button>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </body>
+    </nav>
+    <!-- Prueba de juego de azar para ver que jugador gana. -->
+    <div class="container">
+        <!-- Clase boton de Bootstrap-->
+        <button id="Random" type="button" class="btn btn-outline-secondary rounded-top" onclick="Random()"> Probamos suerte???</button>
+        <div class="row ">
+            <!-- Le hemos dado a cada columna un valor 3/12 que tiene la pantalla-->
+            <div class="col-3">Xavi</div>
+            <div id="PrimerJugador" class="col-1">Puntuacion</div>
+            <!-- Con la siguiente linea queremos que todos ocupen lo mismo y esten en filas separadas.-->
+            <div class="w-100"></div>
+            <div class="col-3">Alfonso</div>
+            <div id="SegundoJugador" class="col-3">Puntuacion</div>
+            <div class="w-100"></div>
+            <div class="col-3">Resultado</div>
+            <!-- TODO revisar el responsive de esta ultima columna, queda muy feo al ser una pantalla small-->
+            <div id="Resultado" class="col-3">Quien Ganara???</div>
+        </div>
+    </div>
+
+</body>
+
 </html>
