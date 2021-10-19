@@ -5,7 +5,8 @@ Version 0.1  -->
 
 <head>
     <!-- Referencia para BOOTSTRAP 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- Hacer la pagina un poco mas responsive con la siguiente linea -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Enlace a nuestro archivo de Javascript donde trabajaremos Backend -->
@@ -17,28 +18,39 @@ Version 0.1  -->
 
 <body>
     <!--Navbar creado con Bootstrap -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Proyecto ASIX </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <button type="button" class="btn -light" onclick="Home()">Home</button>
-                    </li>
-                    <li class="nav-item">
-                        <button id="boton" type="button" class="btn btn-light" onclick="PulsarPrueba()">Probando</button>
-                    </li>
-                </ul>
-            </div>
+    <header>
+
+        <div class="p-5 text-center xlbg-image" style="background-image: url('https://mdbootstrap.com/img/new/slides/041.jpg') ;         
+        background-size: cover; height: 800px; ">
+            <!-- Usamos background size para que llene todo el div, el alto lo podemos modificar.-->
+            <nav class="navbar navbar-expand-md navbar-dark shadow-5-strong">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Proyecto ASIX </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <button type="button" class="btn -light" onclick="Home()">Home</button>
+                            </li>
+                            <li class="nav-item">
+                                <button id="boton" type="button" class="btn -light"
+                                    onclick="PulsarPrueba()">Probando</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </nav>
+
+    </header>
     <!-- Prueba de juego de azar para ver que jugador gana. -->
     <div class="container">
         <!-- Clase boton de Bootstrap-->
-        <button id="Random" type="button" class="btn btn-outline-secondary rounded-top" onclick="Random()"> Probamos suerte???</button>
+        <button id="Random" type="button" class="btn btn-outline-secondary rounded-top" onclick="Random()"> Probamos
+            suerte???</button>
         <div class="row ">
             <!-- Le hemos dado a cada columna un valor 3/12 que tiene la pantalla-->
             <div class="col-3">Xavi</div>
