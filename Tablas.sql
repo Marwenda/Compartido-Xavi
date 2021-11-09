@@ -20,7 +20,7 @@ Nombre,apell varchar(50),
 Email varchar(50),
 Edad int,
 Peso int,
-Altura int,>
+Altura int,
 Ejerciciosnorepetir int,
 Capacitat int ,
 primary key (ID)
