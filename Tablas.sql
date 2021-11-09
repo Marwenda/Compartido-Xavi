@@ -24,5 +24,6 @@ Altura int,
 Ejerciciosnorepetir int,
 Capacitat int ,
 primary key (ID)
+foreign key (ejerciciosnorepetir) REFERENCES EJERCICIOS(ID)
 )engine=innodb;
 
