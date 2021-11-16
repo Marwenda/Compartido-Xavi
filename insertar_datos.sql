@@ -1,3 +1,5 @@
+/*------------Inserció de dades ----------*/
+
 INSERT INTO EJERCICIOS(ID,Nombre,Aerobico,GrupoMuscular,HIT,Gimnasio)
 VALUES  (1,"Press Banca", FALSE, "Torso" , FALSE, TRUE ),
         (2,"Press Hombro", FALSE, "Torso" , FALSE, TRUE ),
@@ -13,7 +15,7 @@ VALUES  (1,"Miriru","Password","Maria Irun","maria@bemen3.cat",25,51.3,165.2,"Tr
         (4,"J","MenInBlack","Will Smith","WSmithy@gmail.com",55,88,192,"",FALSE),
         (5,"Captain","America","Chris Evans","1stAvenger@gmail.com",42,95,197,"",FALSE);
 
-/*------------Inserció de dades ----------*/
+
 INSERT INTO TABLA_EJERCICIOS
 VALUES (1, 1, '2021-10-15', 'Press hombro 4 series por 12 repeticiones #  Press banca 3 series por 11 repetiiopnes # Sentadilla con peso 3 series por 21 repeticiones # '),
         (2, 2, '2021-10-16', 'Curl biceps 5 series por 10 repeticiones # Sentadilla con peso 3 series por 21 repeticiones # Trotar 20 minutos ritmo relajado'),

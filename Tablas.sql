@@ -27,7 +27,6 @@ Edad int,
 Peso float,
 Altura float,
 Ejercicios_norepetir varchar(40),
-Ejercicios_norepetir varchar(20),
 Mov_reducida boolean,
 primary key (ID)
 )engine=innodb;
@@ -36,8 +35,7 @@ CREATE TABLE TABLA_EJERCICIOS (
 ID int not null unique,     /* 10*/
 ID_Cliente int,             /* 2 */
 Fecha date,
-Contenido_Tabla varchar(500) ,
-Contenido_tabla varchar(300),    /*curl de pecho 3 repticones 5 series # curl...*/
+Contenido_Tabla varchar(500),
 primary key (ID, ID_Cliente),
 foreign key (ID_Cliente) references CLIENTES(ID)
 )engine=innodb;
