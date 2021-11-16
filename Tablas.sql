@@ -43,7 +43,7 @@ CREATE TABLE FEEDBACK (
 ID_Feedback int not null unique,
 Cansancio int,
 G_Satisfaccion int,
-Cometnario varchar(500),
+Comentario varchar(500),
 ID_Cliente int not null unique,
 ID_Tabla int not null unique,
 primary key (ID_Feedback),
