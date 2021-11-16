@@ -1,10 +1,9 @@
 
 /*EN EL SQL TENEMOS QUE AÑADIR ESTO: 
 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Bemen3';
-*/ 
+*/
 
 var mysql = require('mysql');
-
 var conexion = mysql.createConnection({
     host: 'localhost',
     database: 'corazonfit',
@@ -19,16 +18,21 @@ conexion.connect(function (error) {
         console.log('Conexion establecida')
     }
 });
+function Select(dato, tabla) {
+    return (
+        conexion.query("SELECT "+dato+" FROM "+tabla+";", function (error, results) {
+            if (error) {
+                throw error;
+            } else {
+                results.forEach(result => {
+                    let Alias = result.Alias;
+                    let Edad = result.Edad;
+                    console.log(" Usuario: " + Alias + " \n edad: " + Edad);
+                });
+            }
 
-conexion.query("SELECT * FROM clientes;", function(error,results,fields){
-    if (error) {
-        throw error;
-    } else {
-        results.forEach(result => {
-            console.log(result.Alias, result.Edad);
-            
-        });}
-
-});
-
+        })
+)
+}
+Select("*", "clientes")
 conexion.end();
