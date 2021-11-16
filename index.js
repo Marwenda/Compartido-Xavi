@@ -29,6 +29,6 @@ conexion.query("SELECT * FROM clientes;", function(error,results,fields){
             
         });}
 
-})
+});
 
 conexion.end();
