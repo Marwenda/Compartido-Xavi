@@ -1,7 +1,14 @@
 
 /*EN EL SQL TENEMOS QUE AÑADIR ESTO: 
 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Bemen3';
+<<<<<<< HEAD
 */
+=======
+Para arrancar el archivo necesitamos tener Nodemon instalado.
+En este caso nosotros lo tenemos en package.json como serve, entonces para 
+correr el archivo tiene que ser npm run serve index.js
+*/ 
+>>>>>>> 0a30d408a457bbc497dc509e7d9cfd1c863be03a
 
 var mysql = require('mysql');
 var conexion = mysql.createConnection({
