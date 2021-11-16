@@ -1,4 +1,9 @@
-
+/*
+Nom del fitxer: Script BD_CorazonFit
+Nom de la base de dades: BD_CorazonFit
+Nom i cognoms dels autors: Alfonso López, Xavier Collado
+Data de creació: 16/11/2021
+*/
 CREATE DATABASE IF NOT EXISTS CorazonFit ;
 USE CorazonFit ;
 
@@ -19,24 +24,20 @@ Pass varchar(50),
 Nombre_apell varchar(50),
 Email varchar(50),
 Edad int,
-Peso int,
-Altura int,
-Ejercicios_norepetir int,
-Capacitat int ,
-primary key (ID),
-foreign key (Ejercicios_norepetir) REFERENCES EJERCICIOS(ID)
+Peso float,
+Altura float,
+Ejercicios_norepetir varchar(40),
+Mov_reducida boolean,
+primary key (ID)
 )engine=innodb;
 
 CREATE TABLE TABLA_EJERCICIOS (
 ID int not null unique,
 ID_Cliente int,
 Fecha date,
-ID_Ejercicio int ,
-Series_Ejercicio int,
-Repeticiones_por_serie int,
+Contenido_Tabla varchar(500) ,
 primary key (ID, ID_Cliente),
-foreign key (ID_Cliente) references CLIENTES(ID),
-foreign key (ID_Ejercicio) references EJERCICIOS(ID)
+foreign key (ID_Cliente) references CLIENTES(ID)
 )engine=innodb;
 
 CREATE TABLE FEEDBACK (
