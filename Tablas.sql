@@ -21,7 +21,7 @@ Email varchar(50),
 Edad int,
 Peso float,
 Altura float,
-Ejercicios_norepetir varchar(20),
+Ejercicios_norepetir varchar(40),
 Mov_reducida boolean,
 primary key (ID)
 )engine=innodb;

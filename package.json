@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15"
+  },
+  "name": "compartido-xavi",
+  "version": "1.0.0",
+  "description": "Prueba conexion mysql desde nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marwenda/Compartido-Xavi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marwenda/Compartido-Xavi/issues"
+  },
+  "homepage": "https://github.com/Marwenda/Compartido-Xavi#readme"
+}
