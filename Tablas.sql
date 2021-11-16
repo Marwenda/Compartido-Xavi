@@ -8,7 +8,7 @@ CREATE DATABASE IF NOT EXISTS CorazonFit ;
 USE CorazonFit ;
 
 CREATE TABLE EJERCICIOS (
-ID int UNIQUE NOT NULL,
+ID int UNIQUE NOT NULL ,
 Nombre varchar(50),
 Aerobico boolean,
 GrupoMuscular varchar(50),
@@ -26,30 +26,36 @@ Email varchar(50),
 Edad int,
 Peso float,
 Altura float,
+<<<<<<< HEAD
 Ejercicios_norepetir varchar(40),
+=======
+Ejercicios_norepetir varchar(20),
+>>>>>>> bcce5df0c3cb334085284b00df6f4cfcc20a55f8
 Mov_reducida boolean,
 primary key (ID)
 )engine=innodb;
 
 CREATE TABLE TABLA_EJERCICIOS (
-ID int not null unique,
-ID_Cliente int,
+ID int not null unique,     /* 10*/
+ID_Cliente int,             /* 2 */
 Fecha date,
+<<<<<<< HEAD
 Contenido_Tabla varchar(500) ,
+=======
+Contenido_tabla varchar(300),    /*curl de pecho 3 repticones 5 series # curl...*/
+>>>>>>> bcce5df0c3cb334085284b00df6f4cfcc20a55f8
 primary key (ID, ID_Cliente),
 foreign key (ID_Cliente) references CLIENTES(ID)
 )engine=innodb;
 
 CREATE TABLE FEEDBACK (
-ID_Feedback int not null unique,
+ID_Feedback int not null unique, /*1*/
 Cansancio int,
 G_Satisfaccion int,
-Comentario varchar(500),
-ID_Cliente int not null unique,
-ID_Tabla int not null unique,
+Comentario varchar(500),          /*Genial*/
+ID_Cliente int not null unique,  /*2*/
+ID_Tabla int not null unique,   /*10*/
 primary key (ID_Feedback),
 foreign key (ID_Cliente) references CLIENTES(ID),
 foreign key (ID_Tabla) references TABLA_EJERCICIOS(ID)
 )engine=innodb;
-
-
